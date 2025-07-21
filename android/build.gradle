@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2' // Use a compatible Android Gradle Plugin version
+        classpath 'com.android.tools.build:gradle:8.2.2' // Use a compatible Android Gradle Plugin version
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
+    namespace = "io.adaptant.labs.flutter_windowmanager"
     compileSdkVersion 33
 
     defaultConfig {
